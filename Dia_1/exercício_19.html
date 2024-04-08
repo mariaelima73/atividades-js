@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 19</h1>
+    <br>
+    <div>
+    <script>
+        var numero5 = Number(prompt('Digite um número:'))
+
+        var resp = (numero5 % 7 == 0) && (numero5 % 11 == 0) ? 'é múltiplo de 7 e 11': (numero5 % 11 == 0) ? 'é múltiplo de 11' : (numero5 % 7 == 0) ? 'é múltiplo de 7':'não é múltiplo de 7 ou 11'
+
+        document.write(`O número ${numero5} ${resp}.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>

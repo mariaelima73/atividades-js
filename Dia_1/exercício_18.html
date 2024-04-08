@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 18</h1>
+    <br>
+    <div>
+    <script>
+        var horasTrabalhadas = Number(prompt('Qual o número de horas trabalhadas?'))
+        var valorHora = Number(prompt('Qual o valor da hora?'))
+
+        var salarioDiario = (horasTrabalhadas * valorHora)
+
+        document.write(`Número de horas trabalhadas: ${horasTrabalhadas}.<br>`)
+        document.write(`Valor da hora: ${valorHora.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}.<br><br>`)
+        document.write(`O salário diário é de ${salarioDiario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>

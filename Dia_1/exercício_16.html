@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 16</h1>
+    <br>
+    <div>
+    <script>
+        var numero4 = Number(prompt('Digite um número:'))
+
+        var resp = (numero4 % 3 == 0) && (numero4 % 5 == 0) ? 'é divisível':'não é divisível'
+
+        document.write(`O número ${numero4} ${resp} por 3 e 5 ao mesmo tempo.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>

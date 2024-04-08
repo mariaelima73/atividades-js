@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 21</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 21</h1>
+    <br>
+    <div> 
+    <script>
+        var nota1 = Number(prompt('Digite a primeira nota:'))
+        var peso1 = Number(prompt('Digite o peso da nota:'))
+        var nota2 = Number(prompt('Digite a segunda nota:'))
+        var peso2 = Number(prompt('Digite o peso da nota:'))
+
+
+        var mediaPond = ((nota1 * peso1) + (nota2 * peso2))/(peso1 + peso2)
+
+        document.write(`As notas são: ${nota1} com peso ${peso1} e ${nota2} com peso ${peso2}.<br><br>`)
+        document.write(`A média ponderada das notas é: ${mediaPond}.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 6</h1>
+    <br>
+    <div>
+    <script>
+        var altura = Number(prompt('Digite sua altura, em metros:'))
+        var peso = Number(prompt('Digite seu peso, em kg:'))
+
+        var IMC = peso/(altura*altura)
+
+        document.write(`Sua altura: ${altura}.<br>`)
+        document.write(`Seu peso: ${peso}.<br><br>`)
+        document.write(`O seu Índice de Massa Corporal (IMC) é ${IMC.toFixed(2)}.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>

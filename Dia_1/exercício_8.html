@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+    <style>
+        body{
+            background-color: black;
+            color: lightblue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            padding: 10px;
+            border: solid;
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 8</h1>
+    <br>
+    <div>
+    <script>
+        var precoProduto = Number(prompt('Qual o valor do produto?'))
+        
+        var desconto = (precoProduto * 0.1)
+        var precoComDesconto = (precoProduto - desconto)
+
+        document.write(`O valor do produto é ${precoProduto.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}.<br>`)
+        document.write(`O valor atualizado do produto com desconto de 10% é ${precoComDesconto.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}.<br>`)
+
+    </script>
+    </div>
+</body>
+
+</html>
